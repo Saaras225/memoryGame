@@ -1,29 +1,10 @@
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 import './Card.css';
 import ReactCardFlip from 'react-card-flip';
 import cover from './img/memory.jpg';
 
 export const Card= (props) => {
-  const {id, image, flipCard, unflippedCard, disableCards} = props;
-  const [isTurn, setIsTurn] = useState(false);
-
-  useEffect(() => {
-    if(unflippedCard.includes(image)){
-     setTimeout(() => setIsTurn(false), 700)
-    }
-   }, [unflippedCard])
-  
-  const handleClickTurned = e => {
-    const value = flipCard(image, id);
-    if(value !== 0){
-      setIsTurn(!isTurn)
-    };
-  }
-
-  console.log(unflippedCard)
- 
-
-  
+  const {id, image, index,handleClick, isTurn} = props;
   return (
     <div className="cardUnit">
       <ReactCardFlip isFlipped={isTurn} flipDirection='horizontal'>
@@ -32,7 +13,7 @@ export const Card= (props) => {
           className='openCard' 
           src={cover} 
           alt='frontFace' 
-          onClick={handleClickTurned}
+          onClick={()=> {handleClick(id, index)}}
           />
         </div>
 
@@ -42,7 +23,6 @@ export const Card= (props) => {
         className='imgCard' 
         src={image} 
         alt='animalFace'
-        onClick={handleClickTurned}
         />
         </div>
       </ReactCardFlip>
