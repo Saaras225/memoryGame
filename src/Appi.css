@@ -1,0 +1,52 @@
+.Container {
+    background-color: cornflowerblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+  
+  #aciertos{
+   color:green;
+   font-weight: bold
+  }
+  
+  #errores{
+    color:red;
+    font-weight: bold
+  }
+  
+  .cardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 15px 20px;
+  }
+  
+  .containerCounter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 90vw;
+    margin-bottom: 10px;
+    font-family: math;
+  }
+  
+  .counter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    border: 5px solid white;
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: 20px;
+  }
+  
+  p{
+    margin: 0px;
+    border-bottom: 1px solid white;
+    font-size: 30px;
+  }

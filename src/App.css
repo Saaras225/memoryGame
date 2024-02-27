@@ -9,25 +9,8 @@
   color: white;
 }
 
-.cardContainer {
-  display: flex;
-  flex-wrap: wrap;
-  width: 80vw;
-  margin-top: 100px;
-  margin-bottom: 50px;
-  justify-content: center;
-}
-
-
-/* @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Container {
+  background-color: cornflowerblue;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -36,15 +19,105 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+#aciertos {
+ color:greenyellow;
+ font-weight: bold;
+ background-color: green;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+#errores {
+  color:red;
+  font-weight: bold;
+  background-color:#f3a2a2
+}
+
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 15px 20px;
+}
+
+.containerCounter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 90vw;
+  margin-bottom: 10px;
+  font-family: math;
+}
+
+.counter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+  border: 5px solid white;
+  border-radius: 20px;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+p {
+  margin: 0px;
+  border-bottom: 1px solid white;
+  font-size: 30px;
+}
+
+.newPlayer {
+  border-radius: 15px;
+  background-color: darkseagreen;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 5px 20px;
+}
+
+.player {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.inputName {
+  border-radius: 20px;
+  height: 20px;
+  background-color: cornsilk;
+  margin-top:25px;
+}
+
+.playerName {
+  margin-left:20px;
+  margin-top:10px;
+  p {
+    color:black;
+    border-bottom: none;
+    font-family: fantasy;
   }
-  to {
-    transform: rotate(360deg);
+
+  span {
+    color: yellow;
+    margin-left: 5px;
+    font-family: inherit;
   }
-} */
+}
+
+.newPlayer {
+  margin-right:20px;
+  margin-top:10px;
+}
+
+.loading {
+  font-weight: 800;
+  color: black;
+  font-family: fantasy;
+  font-size: xx-large;
+}
+
+.note{
+  margin-left: 5px;
+  font-size: 12px;
+  color: black;
+  font-weight: 700;
+  border-bottom: none;
+}
